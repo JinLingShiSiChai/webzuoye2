@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>买猜商城</title>
+    <meta charset="UTF-8"/>
+	<style type="text/css">
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    select{
+    	border:0px;
+    }
+    a{
+    	text-decoration: none;
+    }
+    li{
+    	list-style-type: none;
+    }
+    #big{
+    	width: 1920px;
+    	height: 2080px;
+    	
+    }
+    .one{
+    	width: 1920px;
+    	height: 40px;
+    }
+    .one_a{
+    	width: 450px;
+        height:40px;
+        margin-left: 788px; 
+        display: inline-block;
+        float:left;
+    }
+    .one_a p{
+    	font-size: 12.93px;
+    	color:#0d0408;
+    	text-align: center;
+        line-height: 40px;     
+    }
+    .one_a span{
+        font-size: 14.78px;
+        font-weight: bold;
+        color:#0d0408;
+        line-height: 40px;
+        text-align: center;  
+    }
+    .one_b{
+    	margin-right: 20px;
+    	line-height: 40px;
+    	display: inline-block;
+    	float: left;
+    }
+    .one_c{
+    	margin-right: 20px;
+    	line-height: 40px;
+    	display: inline-block;
+    	float: left;
+    }
+    .one_d{
+    	display: inline-block;
+    	float: left;
+    }
+    .one_d p{
+    	font-size:14.78px;
+    	color: #0d0408;
+    	line-height: 40px;
+    }
+    .one_e{
+    	margin-top: 10px;
+    	margin-left: 30px;
+    	margin-right: 10px;
+    	display: inline-block;
+    	float: left;
+    }
+    .one_f{
+    	margin-top:10px;
+    	display: inline-block;
+    	float: left;
+    }
+    .two{
+    	width: 1920px;
+    	height: 108px;
+    }
+    .two_a{
+    	margin: 30px 174px 20px 360px;
+    	display: inline-block;
+    	float: left;
+    }
+    .two_b input{
+        width: 542px;
+        height: 40px;
+        margin-top: 40px;
+        display: inline-block;
+        font-size:14.78px;
+        font-weight: lighter;
+        color: #ccc;
+        text-align: center;
+    	float: left;
+    }
+    .two_c input{
+    	width: 60px;
+    	height:44px;
+    	margin-top: 40px;
+    	display: inline-block;
+    	float: left;
+        background-image: url(image2/search.png);
+        background-color: #fff;
+        background-repeat: no-repeat;
+    }
+    .two_d{
+        margin: 50px 359px 25px 151px;
+        display: inline-block;
+    	float: left;
+    }
+    .three{
+    	width: 1920px;
+    	height: 40px;	
+    }
+    .three_a{
+    	margin-left: 378px;
+    	margin-top:8px;
+    }
+    .three_a>ul>li{
+    	display: inline-block;
+    	text-align: center;	
+    	width: 112px;
+    	height: 40px;
+    	line-height: 40px;	
+    }
+    .three_a>ul>li>a{
+    	font-size: 14.78px;
+    	color: #000;
+    }
+    .three_a>ul>li>a:hover{
+        font-size: 14.78px;
+    	color: #3aa747;
+    	border-bottom:4px solid #3aa747;
+    	padding-bottom: 6px;
+    }
+    .four{
+    	width: 100%;
+    	height: 670px;
+    	background-image: url(image2/banner.png);
+    	background-repeat: no-repeat;
+    	border-top: 4px solid #3aa747;
+    }
+    .five{
+    	width: 1920px;
+    	height: 1018px;
+    	
+    }
+    .five_a{
+    	width: 170px;
+    	height: 38px;
+    	margin-top: 12px;
+    	margin-left:384px;
+    	text-align: center;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_a p{
+    	font-size:18px; 
+    	color:#000;
+    }
+    .five_a span{
+    	font-size: 14px;
+    	color:#5c5a5a;
+    }
+    .five_b{
+    	width: 200px;
+    	height: 38px;
+    	margin-top: 24px;
+    	margin-left: 895px;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_b p{
+    	font-size: 14px;
+    	color: #000;
+    }
+    .five_c{
+        width: 1198px;
+        height: 138px;
+        margin-top: 0px;
+        margin-left: 365px;
+        border: 1px solid #ccc;
+        display: inline-block;
+    	float: left;
+    }
+    .five_ca{
+    	width: 1198px;
+    	height: 45px;
+    	border-bottom:1px solid #ccc; 
+    }
+    .five_ca>ul>li{
+    	display: inline-block;
+    	text-align: center;	
+    	width: 112px;
+    	height: 45px;
+    	line-height: 45px;	
+    }
+    .five_ca>ul>li>a{
+    	font-size:16px;
+    	color: #4c4c4c;
+    }
+    .five_ca>ul>li>a:hover{
+        font-size: 16px;
+    	color: #89ca91;
+    }
+    .five_ca>ul>li>p{
+    	font-size: 16px;
+    	color: #000;
+    	background-color: #e5e5e5;
+    }
+    .five_cb{
+    	width: 1198px;
+    	height: 45px;
+    	border-bottom:1px solid #ccc; 
+    }
+    .five_cb>ul>li{
+    	display: inline-block;
+    	text-align: center;	
+    	width: 112px;
+    	height: 45px;
+    	line-height: 45px;	
+    }
+    .five_cb>ul>li>a{
+    	font-size:16px;
+    	color: #4c4c4c;
+    }
+    .five_cb>ul>li>a:hover{
+        font-size: 16px;
+    	color: #89ca91;
+    }
+    .five_cb>ul>li>p{
+    	font-size: 16px;
+    	color: #000;
+    	background-color: #e5e5e5;
+    }
+    .five_cc{
+    	width: 1198px;
+    	height: 45px;	
+    }
+    .five_cc>ul>li{
+    	display: inline-block;
+    	text-align: center;	
+    	width: 112px;
+    	height: 45px;
+    	line-height: 45px;	
+    }
+    .five_cc>ul>li>a{
+    	font-size:16px;
+    	color: #4c4c4c;
+    }
+    .five_cc>ul>li>a:hover{
+        font-size: 16px;
+    	color: #89ca91;
+    }
+    .five_cc>ul>li>p{
+    	font-size: 16px;
+    	color: #000;
+    	background-color: #e5e5e5;
+    }
+    .five_d{
+    	width: 1210px;
+    	height: 625px;
+    	margin-top: 60px;
+    	margin-left: 385px;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_d p{
+    	font-size: 14px;
+    	color: #fff;
+    	text-align: center;
+    }
+    .five_da{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	margin-bottom: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_da1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 46px;
+    	position:relative;
+    	top:-56px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_da:hover .five_da1{
+    	display: none;
+    }
+    .five_da2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+        top: -298px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_da2 p{
+    	padding-top: 130px;
+    }
+    .five_da:hover .five_da2{
+    	display: block;
+    }
+    .five_db{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	margin-bottom: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_db img{
+    	position: relative;
+    	top:22px;
+    	left:20px;
+    }
+    .five_db1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 48px;
+    	position:relative;
+    	top:4px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_db:hover .five_db1{
+    	display: none;
+    }
+    .five_db2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+    	top:-237px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_db2 p{
+    	padding-top: 130px;
+    }
+    .five_db:hover .five_db2{
+    	display: block;
+    }
+    .five_dc{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	margin-bottom: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_dc img{
+    	position: relative;
+    	top:40px;
+    	left:30px;
+    }
+    .five_dc1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 48px;
+    	position:relative;
+    	top:30px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_dc:hover .five_dc1{
+    	display: none;
+    }
+    .five_dc2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+    	top: -210px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_dc2 p{
+    	padding-top: 130px;
+    }
+    .five_dc:hover .five_dc2{
+    	display: block;
+    }
+    .five_dd{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	margin-bottom: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_dd img{
+    	position: relative;
+    	top:40px;
+    	left:30px;
+    }
+    .five_dd1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 48px;
+    	position:relative;
+    	top:10px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_dd:hover .five_dd1{
+    	display: none;
+    }
+    .five_dd2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+    	top:-230px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_dd2 p{
+    	padding-top: 130px;
+    }
+    .five_dd:hover .five_dd2{
+    	display: block;
+    }
+    .five_de{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_de img{
+    	position: relative;
+    	top:40px;
+    	left:30px;
+    }
+    .five_de1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 47px;
+    	position:relative;
+    	top:6px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_de:hover .five_de1{
+    	display: none;
+    }
+    .five_de2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+    	top:-238px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_de2 p{
+    	padding-top: 130px;
+    }
+    .five_de:hover .five_de2{
+    	display: block;
+    }
+    .five_df{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_df img{
+    	position: relative;
+    	top:40px;
+    	left:30px;
+    }
+    .five_df1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 48px;
+    	position:relative;
+    	top:6px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_df:hover .five_df1{
+    	display: none;
+    }
+    .five_df2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+    	top:-236px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_df2 p{
+    	padding-top: 130px;
+    }
+    .five_df:hover .five_df2{
+    	display: block;
+    }
+    .five_dg{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_dg img{
+    	position: relative;
+    	top:40px;
+    	left:30px;
+    }
+    .five_dg1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 50px;
+    	position:relative;
+    	top:7px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_dg:hover .five_dg1{
+    	display: none;
+    }
+    .five_dg2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+    	top:-234px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_dg2 p{
+    	padding-top: 130px;
+    }
+    .five_dg:hover .five_dg2{
+    	display: block;
+    }
+    .five_dh{
+    	width: 272px;
+    	height: 293px;
+    	margin-right: 20px;
+    	border: 1px solid #888;
+    	display: inline-block;
+    	float: left;
+    }
+    .five_dh img{
+    	position: relative;
+    	top:40px;
+    	left:30px;
+    }
+    .five_dh1{
+    	z-index: 2;
+    	width: 272px;
+    	height: 50px;
+    	position:relative;
+    	top:11px;
+    	background-color: #000;
+    	opacity: 0.7;
+    	padding-top: 5px;
+    }
+    .five_dh:hover .five_dh1{
+    	display: none;
+    }
+    .five_dh2{
+    	z-index: 2;
+    	display: none;
+    	width: 272px;
+    	height: 293px;
+    	position: relative;
+    	top:-228px;
+    	background-color: #000;
+    	opacity: 0.7;
+    }
+    .five_dh2 p{
+    	padding-top: 130px;
+    }
+    .five_dh:hover .five_dh2{
+    	display: block;
+    }
+    .six{
+    	width: 1920px;
+    	height: 102px;
+    	background-color: #f5f5f5;
+    }
+    .six_a{
+    	width:245px;
+    	height: 60px;
+    	margin-top: 28px;
+    	margin-left: 410px;
+    	display: inline-block;
+    	float: left;
+    }
+    .six_aa{
+    	margin-right: 25px;
+    	display: inline-block;
+    	float: left;
+    }
+    .six_ab p{
+    	font-size: 19px;
+    	color: #333;
+    }
+    .six_ab span{
+    	font-size: 13px;
+    	color: #333;
+    }
+    .six_b{
+    	width:250px;
+    	height: 60px;
+    	margin-top: 28px;
+    	margin-left: 50px;
+    	display: inline-block;
+    	float: left;
+    }
+    .six_ba{
+    	margin-right: 25px;
+    	display: inline-block;
+    	float: left;
+    }
+    .six_bb p{
+    	font-size: 19px;
+    	color: #333;
+    }
+    .six_bb span{
+    	font-size: 13px;
+    	color: #333;
+    }
+    .six_c{
+    	width:245px;
+    	height: 60px;
+    	margin-top: 28px;
+    	margin-left: 50px;
+    	display: inline-block;
+    	float: left;
+    }
+    .six_ca{
+    	margin-right: 25px;
+    	display: inline-block;
+    	float: left;
+    }
+    .six_cb p{
+    	font-size: 19px;
+    	color: #333;
+    }
+    .six_cb span{
+    	font-size: 13px;
+    	color: #333;
+    }
+    .six_d{
+    	width:250px;
+    	height: 60px;
+    	margin-top: 28px;
+    	margin-left: 50px;
+    	display: inline-block;
+    	float: left;
+    }
+    .six_da{
+    	margin-right: 25px;
+    	display: inline-block;
+    	float: left;
+	}
+	.six_db p{
+		font-size: 19px;
+    	color: #333;
+	}
+    .six_db span{
+    	font-size: 13px;
+    	color: #333;
+    }
+    .seven{
+    	width: 1920px;
+    	height: 98px;
+    	padding-top: 40px;
+    	background-color: #323232;
+    }
+    .seven_a{
+    	width: 800px;
+    	height: 30px;
+    	margin-left: 600px;
+    }
+    .seven_a p{
+    	font-size: 14px;
+    	color: #fff;
+    }
+    .seven_b{
+    	width: 700px;
+    	height: 30px;
+    	margin-top: 15px;
+    	margin-left: 840px;
+    }
+    .seven_b p{
+    	font-size: 14px;
+    	color: #fff;
+    }
+    #p{
+        width: 80px;
+        height: 118px;
+        position: fixed;
+        top: 190px;
+        right: 0px;
+        border-bottom: 2px solid #4f5453;
+        background-color: #010807;
+        background-image: url(image2/cart1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #q{
+        width: 80px;
+        height: 118px;
+        position: fixed;
+        top: 310px;
+        right: 0px;
+        border-bottom: 2px solid #4f5453;
+        background-color: #010807;
+        background-image: url(image2/qq.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #r{
+        width: 80px;
+        height: 118px;
+        position: fixed;
+        top: 430px;
+        right: 0px;
+        border-bottom: 2px solid #4f5453;
+        background-color: #010807;
+        background-image: url(image2/zuji.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #s{
+        width: 80px;
+        height: 118px;
+        position: fixed;
+        top: 550px;
+        right: 0px;
+        border-bottom: 2px solid #4f5453;
+        background-color: #010807;
+        background-image: url(image2/erweima.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #t{
+        width: 80px;
+        height: 118px;
+        position: fixed;
+        top: 670px;
+        right: 0px;
+        background-color: #010807;
+        background-image: url(image2/gotop.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+</head>
+<body>
+<form>
+	<div id="big">
+		<div class="one">
+			<div class="one_a">
+				<p>嘿，欢迎来买猜商城!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>请登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;免费注册</span></p>	  
+		    </div>
+            <div class="one_b">
+            	<select name="dingdan">
+            		<option value="one" selected>我的订单&nbsp;</option>
+            		<option value="two">我的订单&nbsp;</option>
+            	</select>	
+            </div>
+            <div class="one_c">
+            	<select name="maicai">
+            		<option value="one" selected>我的买猜&nbsp;</option>
+            		<option value="two">我的买猜&nbsp;v</option>
+            	</select>    	
+            </div>
+            <div class="one_d">
+            	<p>帮助中心</p>
+            </div>
+            <div class="one_e">
+            	<img src="image2/wb.png" alt="logo">
+            </div>
+            <div class="one_f">
+            	<img src="image2/wx.png" alt="logo">
+            </div>
+		</div>
+		<div class="two">
+			<div class="two_a">
+				<img src="image2/logo.png" alt="logo">
+			</div>
+			<div class="two_b">
+				<input type="text" name="inp1" value="请输入搜索内容">
+			</div>
+			<div class="two_c">
+				<input type="button" name="but" >
+			</div>
+			<div class="two_d">
+				<img src="image2/cart.png" alt="logo">
+			</div>
+		</div>
+		<div class="three">
+			<div class="three_a">
+				<ul>
+					<li><select name="fenlei">
+            			<option value="one" selected>全部商品分类&nbsp;</option>
+            			<option value="two">商品</option>
+            		</select></li>
+	                <li><a href="#">首页</a></li>
+	                <li><a href="#">名酒</a></li>
+	                <li><a href="#">茗茶</a></li>
+	                <li><a href="#">玉石</a></li>
+	                <li><a href="#">休闲食品</a></li>
+	                <li><a href="#">洗护用品</a></li>
+	                <li><a href="#">土特产</a></li>
+	                <li><a href="#">积分商城</a></li>
+	                <li><a href="#">抽奖游戏</a></li>
+	            </ul>
+			</div>
+		</div>
+		<div class="four">
+		</div>
+		<div class="five">
+			<div class="five_a">
+			    <p>首页&nbsp;&nbsp;<span>>&nbsp;&nbsp;&nbsp;玉石</span></p>
+		    </div>
+		    <div class="five_b">
+		    	<p>共200件相关商品</p>
+		    </div>
+		    <div class="five_c">
+		    	<div class="five_ca">
+		    		<ul>
+		    			<li><p>玉石</p></li>
+		    			<li><a href="#">白玉</a></li>
+		    			<li><a href="#">碧玉</a></li>
+		    			<li><a href="#">黄玉</a></li>
+		    			<li><a href="#">和田玉</a></li>
+		    			<li><a href="#">翡翠</a></li>
+		    			<li><a href="#">绿松玉</a></li>
+		    			<li><a href="#">墨玉</a></li>
+		    		</ul>
+		    	</div>
+		    	<div class="five_cb">
+		    		<ul>
+		    			<li><p>其他</p></li>
+		    			<li><a href="#">吊坠</a></li>
+		    			<li><a href="#">扳指</a></li>
+		    			<li><a href="#">手镯</a></li>
+		    		</ul>
+		    	</div>
+		    	<div class="five_cc">
+		    		<ul>
+		    			<li><p>地区</p></li>
+		    			<li><a href="#">北京</a></li>
+		    			<li><a href="#">安徽</a></li>
+		    			<li><a href="#">福建</a></li>
+		    			<li><a href="#">内蒙古</a></li>
+		    			<li><a href="#">宁夏</a></li>
+		    			<li><a href="#">黑龙江</a></li>
+		    			<li><a href="#">河北</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    			<li><a href="#">更多</a></li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="five_d">
+		    	<div class="five_da">
+		    		<img src="image2/img1.png" alt="logo">
+		    		<div class="five_da1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;399.00<br/>
+								翡翠千手观音吊坠	
+						</p>
+		    		</div>
+		    		<div class="five_da2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;399.00<br/>
+								翡翠千手观音吊坠	
+						</p>
+		    		</div>
+		    	</div>
+		    	<div class="five_db">
+		    		<img src="image2/img2.png" alt="logo">
+		    		<div class="five_db1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;1980.00</p>
+						<p>翡翠龙凤吊坠	</p>
+		    		</div>
+		    		<div class="five_db2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;1980.00<br/>
+								翡翠龙凤吊坠</p>
+		    		</div>
+		    	</div>
+		    	<div class="five_dc">
+		    		<img src="image2/img3.png" alt="logo">
+		    		<div class="five_dc1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00</p>
+						<p>		
+							翡翠花蕊吊坠	
+						</p>
+		    		</div> 
+		    		<div class="five_dc2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00<br/>
+								翡翠花蕊吊坠	
+						</p>
+		    		</div> 		
+		    	</div>
+		    	<div class="five_dd">
+		    		<img src="image2/img4.png" alt="logo">
+		    		<div class="five_dd1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00</p>
+						<p>
+								翡翠如意吊坠	
+						</p>
+		    		</div>
+		    		<div class="five_dd2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00<br/>
+								翡翠如意吊坠	
+						</p>
+		    		</div>
+		    	</div>
+		    	<div class="five_de">
+		    		<img src="image2/img5.png" alt="logo">
+		    		<div class="five_de1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;99.00</p>
+						<p>翡翠婵吊坠</p>
+		    		</div>
+		    		<div class="five_de2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;99.00<br/>
+								翡翠婵吊坠	
+						</p>
+		    		</div>
+		    	</div>
+		    	<div class="five_df">
+		    		<img src="image2/img6.png" alt="logo">		
+		    		<div class="five_df1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;99.00</p>
+						<p>
+								翡翠观音(浅色)吊坠	
+						</p>
+		    		</div>
+		    		<div class="five_df2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;99.00<br/>
+								翡翠观音(浅色)吊坠	
+						</p>
+		    		</div>
+		    	</div>
+		    	<div class="five_dg">
+		    		<img src="image2/img7.png" alt="logo">
+		    		<div class="five_dg1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00</p>
+						<p>翡翠平安扣(深色)吊坠</p>
+		    		</div>
+		    		<div class="five_dg2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00<br/>
+								翡翠平安扣(深色)吊坠	
+						</p>
+		    		</div>
+		    	</div>
+		    	<div class="five_dh">
+		    		<img src="image2/img8.png" alt="logo">
+		    		<div class="five_dh1">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00</p>
+						<p>翡翠如意吊坠</p>
+		    		</div>
+		    		<div class="five_dh2">
+		    			<p>竞猜价：&nbsp;¥&nbsp;&nbsp;199.00<br/>
+								翡翠如意吊坠	
+						</p>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<div class="six">
+			<div class="six_a">
+				<div class="six_aa">
+					<img src="image2/f1.png" alt="logo">
+				</div>
+				<div class="six_ab">
+					<p>资质认证<br/><span>服务商100%实名认证</span></p>
+				</div>
+			</div>
+			<div class="six_b">
+				<div class="six_ba">
+					<img src="image2/f2.png" alt="logo">
+				</div>
+				<div class="six_bb">
+					<p>支付安全<br/><span>明码标价支付及信息安全</span></p>
+				</div>
+			</div>
+			<div class="six_c">
+				<div class="six_ca">
+					<img src="image2/f3.png" alt="logo">
+				</div>
+				<div class="six_cb">
+					<p>保险赔付<br/><span>为您提供担保赔付</span></p>
+				</div>
+			</div>
+			<div class="six_d">
+				<div class="six_da">
+					<img src="image2/f4.png" alt="logo">
+				</div>
+				<div class="six_db">
+					<p>售后无忧<br/><span>服务出问题经理全程跟进</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="seven">
+			<div class="seven_a">
+				<p>首页&nbsp;&nbsp;|&nbsp;&nbsp;工商代理&nbsp;&nbsp;|&nbsp;&nbsp;财务代记账&nbsp;&nbsp;|&nbsp;&nbsp;股权交易与变更&nbsp;&nbsp;|&nbsp;&nbsp;企业贷款&nbsp;&nbsp;|&nbsp;&nbsp;办公室租赁&nbsp;&nbsp;|&nbsp;&nbsp;社保公积金代理&nbsp;&nbsp;|&nbsp;&nbsp;法律服务</p>
+			</div>
+			<div class="seven_b">
+				<p>@ 2017-2018 买猜商城有限公司 版权所有</p>
+			</div>
+		</div>
+	    <div id="p"></div>
+	    <div id="q"></div>
+	    <div id="r"></div>
+	    <div id="s"></div>
+	    <div id="t"></div>
+	</div>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
